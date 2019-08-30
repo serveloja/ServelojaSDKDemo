@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.TransactionActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/tipoTransacaoRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioCredito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crédito"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/radioDebito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Débito" />
+
+        </RadioGroup>
+
+        <Spinner
+            android:id="@+id/parcelasSpinner"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/parcelas"/>
+
+        <LinearLayout
+            android:id="@+id/valor_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R$ "
+                android:textColor="@color/cinza_escuro"
+                android:textSize="36sp" />
+
+            <EditText
+                android:id="@+id/valorEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:cursorVisible="false"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="right"
+                android:inputType="numberDecimal"
+                android:textColor="@color/cinza_escuro"
+                android:textSize="36sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/enviarButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textColor="@android:color/white"
+        android:background="@color/cinza_escuro"
+        android:layout_gravity="bottom"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="ENVIAR TRANSAÇÃO"/>
+
+</FrameLayout>
