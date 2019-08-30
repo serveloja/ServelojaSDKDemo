@@ -38,7 +38,7 @@ Abrir o arquivo *gradle.properties* e inserir as seguintes credenciais:
 
 ```properties
 username=serveloja
-authToken=jp_h2ko7hdreu2pk4r2edistfmkrt
+authToken=consultar_serveloja
 ```
 
 ## Configurando o projeto para usar o repositório via Jitpack
