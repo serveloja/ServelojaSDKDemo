@@ -250,7 +250,7 @@ Após realizar uma venda, a SDK irá popular diversas propriedades do objeto Ven
 Entre elas está o Número do Pedido que pode ser utilizado na Serveloja e o Código de Autorização que é gerado pela bandeira.
 
 
-```
+```kotlin
 /* Model que representa a venda a ser realizada */
 val venda = Venda(
 	tipo,
