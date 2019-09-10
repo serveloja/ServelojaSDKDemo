@@ -251,7 +251,21 @@ Entre elas está o Número do Pedido que pode ser utilizado na Serveloja e o Có
 
 
 ```
-val Venda
-- val codAutorizacao
-- val numeroPedido
+/* Model que representa a venda a ser realizada */
+val venda = Venda(
+	tipo,
+	valor,
+	ParcelasEnum.from(parcelas),
+	descricao = "",
+	cpfCnpjComprador = "12312312387",
+	latLong = "",
+	nomeTitular = "TESTE TESTE",
+	ddd = "79",
+	telefone = "999999999"
+)
+
+// realizar fluxo de autorização
+
+val codigoAutorizacao = venda.codAutorizacao;
+val numeroPedido = venda.numeroPedido;
 ```
