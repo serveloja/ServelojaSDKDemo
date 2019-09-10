@@ -248,3 +248,10 @@ fun confirmaEnvio() {
 Após realizar uma venda, a SDK irá popular diversas propriedades do objeto Venda fornecido.
 
 Entre elas está o Número do Pedido que pode ser utilizado na Serveloja e o Código de Autorização que é gerado pela bandeira.
+
+
+```
+val Venda
+- val codAutorizacao
+- val numeroPedido
+```
