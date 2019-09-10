@@ -42,7 +42,7 @@ authToken=consultar_serveloja
 ```
 
 ## Configurando o projeto para usar o repositório via Jitpack
-Aceesar o *build.gradle (Project)*, e adicionar o repositório do Jitpack
+Acessar o *build.gradle (Project)*, e adicionar o repositório do Jitpack
 
 ```gradle
 allprojects {
@@ -243,3 +243,8 @@ fun confirmaEnvio() {
     }.show()
 }
 ```
+
+## Obtendo o número do pedido e autorização
+Após realizar uma venda, a SDK irá popular diversas propriedades do objeto Venda fornecido.
+
+Entre elas está o Número do Pedido que pode ser utilizado na Serveloja e o Código de Autorização que é gerado pela bandeira.
